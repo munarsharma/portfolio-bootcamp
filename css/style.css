@@ -1,0 +1,93 @@
+/* //add colors  */
+
+$xlarge: 1200px;
+$large: 90px;
+$medium: 650px;
+$small: 450px;
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#view1, #view2{
+    background: -webkit-linear-gradient(left, #f2d4da 0%,#f2d4da 54%,#df3052 54%,#df3052 100%);
+
+}
+
+#view3 {
+   background: -webkit-linear-gradient(left, rgba(246,173,85,1) 0%,rgba(246,173,85,1) 57%,rgba(242,212,218,1) 57%,rgba(242,212,218,1) 100%);
+}
+#view4{
+   background: -webkit-linear-gradient(left, rgba(242,212,218,1) 1%,rgba(242,212,218,1) 1%,rgba(242,212,218,1) 43%,rgba(246,173,85,1) 44%,rgba(246,173,85,1) 100%);
+}
+
+.container {
+display: grid;
+
+
+/* -webkit-radial-gradient(center, ellipse cover, rgba(246,173,85,1) 0%,rgba(246,173,85,0.59) 41%), */
+
+grid-template-columns: [full-start] 1fr [content-start] repeat(3, 2fr) [content-end] 1fr [full-end];
+
+grid-template-rows: 1fr 2fr 2fr 1fr;
+grid-template-areas:'. . . . .'
+'.  . center . .'
+'. . center right .' 
+'left left . . .';
+
+grid-gap: 10px ;
+/* //@media to handle mobile view */
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#v1Left {
+    grid-area: left;
+    border: 1px solid yellow;
+
+    }
+    #v1Left ul {
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+
+/* push to the bottom  */
+    }
+
+    #v1Left li {
+      margin:auto ;
+     }
+
+    #v1Center {
+        grid-area: center;
+        border: 1px solid black;
+
+    }
+    
+    #v1Right{
+        grid-area: right;
+        border: 1px solid pink;
+        
+    }
+    #v1Right ul{
+        list-style-type: none;
+        color: #F2D4DA;
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        text-align: right;
+        
+    }
+    

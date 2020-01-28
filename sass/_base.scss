@@ -1,0 +1,27 @@
+//add colors 
+
+$xlarge: 1200px;
+$large: 90px;
+$medium: 650px;
+$small: 450px;
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+display: grid;
+grid-template-columns: [full-start] 1fr [content-start] repeat(4, 2fr) [content-end] 1fr [full-end]
+grid-template-rows:
+
+//@media to handle mobile view
+}
